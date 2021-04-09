@@ -1,0 +1,71 @@
+.container {
+    margin: 0;
+    background-image: url("fish.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+button {
+    background: transparent;
+    padding: 10px 25px;
+    float: right;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-right:40px ;
+}
+button:hover {
+    background-color: blue;
+    transform: scale(1.2,1.2);
+}
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: -70px;
+    position: absolute;
+}
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+   100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 5s;
+}
